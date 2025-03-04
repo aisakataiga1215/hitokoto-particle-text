@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    overflow: hidden; 
+    background: black; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    flex-direction: column; 
+}
+canvas { display: block; position: absolute; top: 0; left: 0; }
+#hitokoto_text, #hint_text {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+    width: 80%;
+    max-width: 800px;
+    line-height: 1.5;
+}
+#hint_text {
+    bottom: 50px;
+    font-size: 1rem;
+    color: gray;
+    opacity: 1;
+}
